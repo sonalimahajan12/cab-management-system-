@@ -1,0 +1,20 @@
+public static String getFileExtension(String filename)
+   {
+       try
+       {
+           filename=filename.trim();
+           int index=filename.lastIndexOf(".");
+           if(index<0)
+               return "";
+           String extension=filename.substring(index+1).trim();
+           return extension;
+       }
+       catch(Exception ex)
+       {
+           System.out.println(ex);
+           return "";
+       }
+   }
+    
+
+
